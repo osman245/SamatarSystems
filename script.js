@@ -10,7 +10,8 @@ form.addEventListener("submit", function(event) {
   const formData = {
     from_name: document.getElementById("name").value,
     from_email: document.getElementById("email").value,
-    message: document.getElementById("message").value
+    message: document.getElementById("message").value,
+    to_email: "osm.warsame@gmail.com"
   };
 
   emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)

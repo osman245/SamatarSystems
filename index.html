@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samatar Consultancy</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container nav-container">
-        <h1 class="logo">Samatar<span>Consultancy</span></h1>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SamatarSystems</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <section id="home" class="hero">
-      <div class="container">
-        <h2>Transforming Businesses with Smart IT Solutions</h2>
-        <p>
-          Samatar Consultancy helps organizations harness the power of cloud and
-          data engineering to drive innovation and efficiency.
-        </p>
-        <a href="#contact" class="btn">Get in Touch</a>
-      </div>
-    </section>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="SamatarSystems Logo" class="logo-img">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="about" class="section">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Empowering Businesses with Scalable IT Solutions</h1>
+    <p>We specialize in Cloud, Data Engineering, and System Optimization for modern enterprises.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      SamatarSystems is a technology consultancy dedicated to helping organizations harness
+      cloud computing, data analytics, and automation. We deliver tailored solutions to improve efficiency, scalability, and performance.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cloud Architecture</h3>
+        <p>Design and deploy cloud environments with AWS, Azure, and GCP for maximum performance.</p>
+      </div>
+      <div class="card">
+        <h3>Data Engineering</h3>
+        <p>Build data pipelines and automated workflows using modern ETL tools like Spark and Hadoop.</p>
+      </div>
+      <div class="card">
+        <h3>System Monitoring</h3>
+        <p>Implement proactive monitoring to maintain uptime, reliability, and optimal system performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SamatarSystems. All rights reserved.</p>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

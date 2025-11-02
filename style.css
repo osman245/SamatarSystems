@@ -1,9 +1,8 @@
-/* Colors: green (#4CAF50), light blue (#00BFFF), white (#FFFFFF) */
-
+/* Colors: Green, Light Blue, White */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #f0fafd;
   color: #333;
 }
 
@@ -12,14 +11,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #00BFFF;
-  color: white;
+  background: linear-gradient(to right, #00BFFF, #00DFA2);
 }
 
-.logo-text {
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #fff;
+.logo-img {
+  height: 50px;
 }
 
 nav a {
@@ -34,37 +30,36 @@ nav a:hover {
 }
 
 .hero {
-  background-color: #4CAF50;
-  color: white;
-  padding: 100px 20px;
   text-align: center;
+  padding: 100px 20px;
 }
 
-.hero-content h1 {
+.hero h1 {
+  color: #00BFA2;
   font-size: 2.5em;
 }
 
-.hero-content p {
+.hero p {
   font-size: 1.2em;
   margin: 20px 0;
 }
 
 .btn {
-  background-color: #00BFFF;
+  background-color: #00BFA2;
   color: white;
   padding: 12px 25px;
+  border-radius: 50px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
 }
 
 .btn:hover {
-  background-color: #009ACD;
+  background-color: #009e80;
 }
 
 .section {
-  padding: 60px 20px;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .cards {
@@ -76,7 +71,7 @@ nav a:hover {
 }
 
 .card {
-  background-color: #f5f5f5;
+  background-color: white;
   padding: 20px;
   width: 250px;
   border-radius: 10px;
@@ -84,7 +79,7 @@ nav a:hover {
 }
 
 .card h3 {
-  color: #4CAF50;
+  color: #00BFA2;
 }
 
 .contact-section form {
@@ -99,5 +94,32 @@ nav a:hover {
 .contact-section textarea {
   padding: 12px;
   border-radius: 5px;
-  border: 1px sol
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.contact-section button {
+  background-color: #00BFA2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #009e80;
+}
+
+#status {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #00BFFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
