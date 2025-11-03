@@ -1,8 +1,6 @@
 // Initialize EmailJS (only once)
 
-emailjs.init({
-        publicKey: "iW1XOtrL22MwcnJn0", // Replace with your EmailJS public key
-      });
+emailjs.init({publicKey: "iW1XOtrL22MwcnJn0"})
 const form = document.querySelector("#contact-form");
 const status = document.querySelector("#status");
 
