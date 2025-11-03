@@ -1,0 +1,22 @@
+name: My CI Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Use secret in environment variable
+        env:
+          EMAIL_JS: ${{ secrets.EMAIL_JS }}  # Reference the secret by its 
+          TEMPLATE_JS: ${{ secrets.TEMPLATE_JS }}  # Reference the secret by its name
+
+        run: |
+          echo "My secret variable value is: $EMAIL_JS"
+          # Your code can now access MY_SECRET_VARIABLE

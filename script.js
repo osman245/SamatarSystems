@@ -1,25 +1,19 @@
-// Initialize EmailJS
-emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+// Initialize EmailJS (only once)
+emailjs.init(""); // replace with your EmailJS user ID
 
-const form = document.getElementById("contact-form");
-const status = document.getElementById("status");
+const form = document.querySelector("#contact-form");
+const status = document.querySelector("#status");
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const formData = {
-    from_name: document.getElementById("name").value,
-    from_email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-    to_email: "osm.warsame@gmail.com"
-  };
-
-  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+  emailjs.sendForm(Process.env.EMAIL_JS,Process.env.TEMPLATE_JS, form)
     .then(() => {
       status.textContent = "✅ Message sent successfully!";
       form.reset();
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error("EmailJS error:", error);
       status.textContent = "❌ Failed to send message. Please try again later.";
     });
 });
