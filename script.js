@@ -7,7 +7,7 @@ const status = document.querySelector("#status");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  emailjs.sendForm(Process.env.EMAIL_JS,Process.env.TEMPLATE_JS, form)
+  emailjs.sendForm(process.env.EMAIL_JS,process.env.TEMPLATE_JS, form)
     .then(() => {
       status.textContent = "✅ Message sent successfully!";
       form.reset();

@@ -1,0 +1,14 @@
+{
+  "name": "samatar-consultancy",
+  "version": "1.0.0",
+  "description": "Welcome to **Samatar Systems**, your trusted IT consultancy partner. We specialize in helping businesses adapt to the modern digital landscape by providing expert guidance and solutions in **Cloud Computing**, **Data Engineering**, and **IT Operations**.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
