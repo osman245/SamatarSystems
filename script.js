@@ -1,6 +1,6 @@
 // Initialize EmailJS (only once)
+import 'dotenv/config'
 emailjs.init(""); // replace with your EmailJS user ID
-require('dotenv').config();
 const form = document.querySelector("#contact-form");
 const status = document.querySelector("#status");
 
